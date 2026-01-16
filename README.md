@@ -4,14 +4,20 @@ This project utilizes a Selenium-based crawler to extract job postings and store
 
 ---
 
-## 0. Describe 2 WebScrappers:
+## 0. Describe two WebScrappers:
 **About 2 WebScrappers:** 
- 1.WebScrapingNoFluff, fetch data and parse through HTML pages,
+ * 1.WebScrapingNoFluff, fetch data and parse through HTML pages,
     fetch raw data -> parse to separated jobs -> add skill list into each job
- 2.WebScrapingJustJoin, fetch data and parse through http response,
+ * 2.WebScrapingJustJoin, fetch data and parse through http response,
     fetch raw data and parse into jobs with skill list
- 3.Job's structure  from 2 websites are same 
+ * 3.Job's structure  from 2 websites are same 
 **About the job structure:** 
+
+
+**Fetch and store path into:** 
+ * 1.`S5520` -> `DB_final` -> `jobs_raw` and `jobs_processed`
+ * 2.`S5520` -> `DB_final` -> `jobs_processed_jj`
+
 ```json
 
 {
@@ -37,9 +43,6 @@ This project utilizes a Selenium-based crawler to extract job postings and store
 }
 ```
 
-**Fetch and store path into:** 
- 1.`S5520` -> `DB_final` -> `jobs_raw` and `jobs_processed`
- 2.`S5520` -> `DB_final` -> `jobs_processed_jj`
 
 
 
@@ -63,7 +66,14 @@ The system supports both local and cloud-based database deployments.
 * **Atlas Configuration:** This configuration is set to connect with remote MongoDB Atlas. 
 
 ---
+## 2. Word Cloud 
 
+We  will use wordCloud to generate the most frequent skill name.
+
+* **JustJoin** 
+* **NoFluffJobs** 
+
+---
 
 
 
